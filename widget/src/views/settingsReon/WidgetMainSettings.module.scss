@@ -1,0 +1,12 @@
+.container {
+    margin-bottom: 20px;
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__text {
+        text-indent: 30px;
+        text-align: justify;
+    }
+}

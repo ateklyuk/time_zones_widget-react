@@ -1,0 +1,13 @@
+.amo-input {
+    &__label-input {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        &-note {
+            color: #777;
+            text-indent: 5px;
+            font-size: 11px;
+        }
+    }
+}

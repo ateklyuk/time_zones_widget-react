@@ -1,0 +1,27 @@
+.toggler-nav {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+
+    &__item {
+        width: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 12px 0;
+        cursor: pointer;
+        position: relative;
+        color: #92989B;
+        transition: all 0.1s ease-in-out;
+        border-bottom: 3px solid rgba(0, 0, 0, 0);
+
+        span {
+            font-size: 16px;
+            color: inherit;
+        }
+
+        &._active {
+            border-color: rgb(76, 139, 247);
+            color: rgb(76, 139, 247);
+            font-weight: 700;
+        }
+    }
+}
