@@ -1,5 +1,5 @@
 define([
-	"./index.js",
+	"./index.ts",
 	"./modules/moment.js",
 	"./modules/moment_tz.js",
 ], function (App, moment, moment_tz) {

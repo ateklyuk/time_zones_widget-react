@@ -1,7 +1,4 @@
-const {
-    Schema,
-    model
-} = require("mongoose"); 
+import {Schema, model} from "mongoose";
 
 const Timezone = new Schema({
     prefix: {type: String, require}, 
@@ -12,5 +9,5 @@ const Timezone = new Schema({
     country: {type: String, require}
 })
 
-module.exports = model("timezone_prefixes", Timezone); 
+export default model("timezone_prefixes", Timezone);
 
