@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongoose');
+import {Schema, model} from 'mongoose';
 
 const Login = new Schema({
     widgetUserSubdomain:{ type: String, require: true },
@@ -7,8 +7,10 @@ const Login = new Schema({
     installed: { type: Boolean }, 
     testPeriod: { type: Boolean },
     startUsingDate: { type: String },
-    finishUsingDate: { type: String }
+    finishUsingDate: { type: String },
+    accessToken: { type: String },
+    refreshToken: { type: String }
 });
 
-module.exports = model('Login', Login);
+export default model('Login', Login);
 

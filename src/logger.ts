@@ -1,4 +1,4 @@
-const log4js = require("log4js");
+import log4js from "log4js";
 
 log4js.configure({
   appenders: {
@@ -23,9 +23,9 @@ log4js.configure({
     default: { appenders: ["everything", "out"], level: "debug", enableCallStack: true },
   },
 });
-const mainLogger = log4js.getLogger();
+export const mainLogger = log4js.getLogger();
 
-const getUserLogger = (subdomain) => {
+export const getUserLogger = (subdomain: string | null) => {
   log4js.configure({
     appenders: {
       out: {
@@ -52,8 +52,3 @@ const getUserLogger = (subdomain) => {
 
   return log4js.getLogger();
 }
-
-module.exports = {
-  mainLogger,
-  getUserLogger
-} 
