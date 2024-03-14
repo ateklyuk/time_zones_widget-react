@@ -1,5 +1,4 @@
 node_modules/
-prefixes/
 site-button/
-logs/
 *.zip
+.idea
