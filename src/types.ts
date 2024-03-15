@@ -1,3 +1,5 @@
+import {JwtPayload} from "jwt-decode";
+
 export type Config = {
     CLIENT_ID: string,
     CLIENT_SECRET: string,
@@ -6,6 +8,9 @@ export type Config = {
     PORT: number,
     DB_URL: string,
     WIDGET_CONTROLLER_URL: string
+}
+export interface DecodedToken extends JwtPayload {
+    account_id: number
 }
 
 export type ErrData = {

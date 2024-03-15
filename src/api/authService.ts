@@ -3,8 +3,10 @@ import {config} from "../config";
 import {getUserLogger, mainLogger} from "../logger";
 import ApiService from "./apiService";
 import Login from "../models/login";
-import moment from "moment/moment";
+import moment from "moment"
 import fs from "fs";
+import {jwtDecode, JwtPayload} from 'jwt-decode'
+import {DecodedToken} from "../types";
 
 export default new class AuthorizationService {
     private makeRedirect = async (url: string, queryParams: {
@@ -18,11 +20,11 @@ export default new class AuthorizationService {
         const logger = getUserLogger(subDomain);
         logger.debug("Got request for widget installation");
         const api = new ApiService(subDomain, authCode);
-        await api.getAccessToken().then(async (token) => {
-            const tokenData = token
+        try {
+            const token = await api.requestAccessToken()
+            const decodedToken = jwtDecode<DecodedToken>(token.access_token)
             logger.debug(`Авторизация при установке виджета для ${subDomain} прошла успешно`)
-            const account = await api.getAccountData([]);
-            const accountId = account.id;
+            const accountId = decodedToken.account_id
             const loginData = {
                 accountId: accountId,
                 widgetUserSubdomain: subDomain,
@@ -31,19 +33,24 @@ export default new class AuthorizationService {
                 testPeriod: true,
                 startUsingDate: moment().format().slice(0, 10),
                 finishUsingDate: moment().add(14, "days").format().slice(0, 10),
-                accessToken: tokenData.access_token,
-                refreshToken: tokenData.refresh_token
+                accessToken: token.access_token,
+                refreshToken: token.refresh_token
             }
-            await Login.findOneAndUpdate({ accountId: accountId}, loginData, {upsert: true})
-                .then(() => logger.debug("Данные о пользователе были добавлены в базу данных виджета"))
-                .catch((err) => logger.debug("Произошла ошибка добавления данных в БД ", err));
-        })
-            .catch((err) => logger.debug("Ошибка авторизации при установке виджета ", subDomain, err));
-        const [searchingUser] = await Login.find({widgetUserSubdomain: subDomain})
-        await this.makeRedirect(`${config.WIDGET_CONTROLLER_URL}/informer`, {
-            client_uuid: integrationId,
-            account_id: searchingUser.accountId
-        })
+            try {
+                await Login.findOneAndUpdate({ accountId: accountId}, loginData, {upsert: true})
+                logger.debug("Данные о пользователе были добавлены в базу данных виджета")
+            } catch (error) {
+                logger.debug("Ошибка авторизации при установке виджета ", subDomain, error)
+            }
+            const [searchingUser] = await Login.find({widgetUserSubdomain: subDomain})
+
+            await this.makeRedirect(`${config.WIDGET_CONTROLLER_URL}/informer`, {
+                client_uuid: integrationId,
+                account_id: searchingUser.accountId
+            })
+        } catch (error) {
+            logger.debug("Ошибка авторизации при установке виджета ", subDomain, error)
+        }
     }
     public deleteHandler = async (accountId: number, integrationId: string): Promise<void> => {
         const [clientAccountData] = await Login.find({accountId});

@@ -45,7 +45,7 @@ export default new class AuthorizationService {
         }
         return prefixResult;
     }
-    public statusHandler = async (subdomain: string, res: Response) => {
+    public statusHandler = async (subdomain: string, res: Response): Promise<Response | undefined> => {
         const logger = getUserLogger(subdomain);
         const [searchingUser] = await Login.find({widgetUserSubdomain: subdomain})
         if (searchingUser && subdomain) {

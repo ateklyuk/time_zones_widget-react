@@ -21,6 +21,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.3",
     "fs": "0.0.1-security",
+    "jwt-decode": "^4.0.0",
     "log4js": "^6.4.3",
     "moment": "^2.29.1",
     "mongoose": "^6.2.5",
@@ -28,6 +29,8 @@
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
+    "@types/jwt-decode": "^3.1.0",
+    "@types/log4js": "^2.3.5",
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2"
   }

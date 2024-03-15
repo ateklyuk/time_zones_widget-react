@@ -3,3 +3,4 @@ prefixes/
 site-button/
 logs/
 *.zip
+.idea

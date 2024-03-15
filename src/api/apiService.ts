@@ -1,12 +1,10 @@
 import axios from "axios";
 import fs from "fs";
-import axiosRetry from "axios-retry";
 import {config} from "../config";
 import {getUserLogger} from "../logger";
 import {Logger} from "log4js";
 import {Token} from "../types";
 
-axiosRetry(axios, { retries: 3, retryDelay: axiosRetry.exponentialDelay });
 
 const LIMIT = 200;
 
@@ -46,7 +44,7 @@ export default class ApiService {
         };
     };
 
-    public requestAccessToken = () => {
+    public requestAccessToken = (): Promise<Token> => {
         return axios
             .post(`${this.ROOT_PATH}/oauth2/access_token`, {
                 client_id: config.CLIENT_ID,
@@ -57,6 +55,7 @@ export default class ApiService {
             })
             .then((res) => {
                 this.logger.debug("Свежий токен получен");
+                fs.writeFileSync(this.AMO_TOKEN_PATH, JSON.stringify(res.data));
                 return res.data;
             })
             .catch((err) => {
