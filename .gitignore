@@ -1,5 +1,5 @@
 node_modules/
-prefixes/
 site-button/
-logs/
 *.zip
+.idea
+/backend/src/core/logger/logs
