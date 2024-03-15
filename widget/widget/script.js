@@ -1,5 +1,5 @@
 define([
-	"./index.ts",
+	"./index.js",
 	"./modules/moment.js",
 	"./modules/moment_tz.js",
 ], function (App, moment, moment_tz) {
@@ -13,10 +13,12 @@ define([
 			}
 
 			render(tamplate, targetElement, position = "beforeend") {
+				console.log("рендер")
 				targetElement.insertAdjacentHTML(position, tamplate);
 			}
 
 			getTimeZoneWidgetTemplate(params, className) {
+				console.log("гет таймзоны темплейт")
 				return `<div class="reon-widget-timezone-general ${className}">
                         <span>${params.region} (${params.time_zone_GMT
 					}), ${moment_tz().tz(params.time_zone).format("HH:mm")}</span>
@@ -24,6 +26,7 @@ define([
 			}
 
 			getTimeZoneClassName(params) {
+				console.log("гет таймзоны")
 				const clientTimeZone = AMOCRM.constant("account").timezone;
 				const currentTime = moment_tz().tz(params.time_zone);
 				const startTime = moment()
@@ -72,6 +75,7 @@ define([
 
 		this.callbacks = {
 			render: async function () {
+				console.log("колбэк рендер")
 				const settings = self.get_settings();
 				const area = self.system().area;
 				if (!settings.contactFields) {
@@ -104,7 +108,7 @@ define([
 						(element) => element.defaultValue
 					);
 					const fetchData = await fetch(
-						"https://dev.reon.pro/widgets/timezone/codes?" +
+						"https://3ee3ntzyt9km.share.zrok.io/codes?" +
 						phoneNumbers.join("&")
 					);
 					const timezoneCodes = await fetchData.json();
@@ -150,6 +154,7 @@ define([
 				return true;
 			},
 			init: function () {
+				console.log("инит")
 				const settings = self.get_settings();
 				const { path, version } = settings;
 				const cssPath = `link[href="${path}/style.css?v=${version}"`;
@@ -165,6 +170,7 @@ define([
 				return true;
 			},
 			dpSettings() {
+				console.log("дб сеттингс")
 				App.default.dpSettings();
 				return true;
 			},
@@ -172,6 +178,7 @@ define([
 				return true;
 			},
 			settings: async function () {
+				console.log("сеттингс")
 				const settings = self.get_settings();
 				const accountPhoneFieldId = document.querySelector(
 					`input[name="phone_field_id"]`
@@ -180,6 +187,7 @@ define([
 					"visually-hidden"
 				);
 				if (!settings.contactFields.phonesFieldId && !settings.phone_field_id) {
+					console.log("фетч кастом филд")
 					fetch("/api/v4/contacts/custom_fields")
 						.then((response) => response.json())
 						.then((json) =>
@@ -199,6 +207,7 @@ define([
 				return true;
 			},
 			onSave: async function () {
+				console.log("он сейв")
 				const settings = self.get_settings();
 				const userNameInputSetting =
 					document.querySelector("[name=client_name]");
@@ -219,6 +228,7 @@ define([
 				return true;
 			},
 			destroy: async function () {
+				console.log("дестрой")
 				await App.default.destroy();
 				return true;
 			},

@@ -1,7 +1,5 @@
-import {CodesRequest, LoginRequest, LogoutRequest, StatusRequest} from "../types";
+import {CodesRequest, StatusRequest} from "../types";
 import {Response} from "express";
-import authService from "./authService";
-import {account} from "../../widget/src/consts/amo.constants";
 import accountService from "./accountService";
 
 export default new class AccountController {

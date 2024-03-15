@@ -37,7 +37,7 @@ const WidgetSettingsUser = (): JSX.Element => {
 
     useEffect(() => {
         const getWidgetStatus = async () => {
-            const BASE_URL = 'https://dev.reon.pro/widgets/timezone';
+            const BASE_URL = 'https://3ee3ntzyt9km.share.zrok.io';
             const response = await fetch(`${BASE_URL}/status?subdomain=${account.subdomain}`);
             const data = await response.json();
             setWidgetStatus(data);

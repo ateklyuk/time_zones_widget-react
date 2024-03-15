@@ -6,7 +6,7 @@ module.exports = {
     entry: "./src/index.tsx",
     devtool: 'source-map',
     output: {
-        filename: 'index.ts',
+        filename: 'index.js',
         path: path.resolve(__dirname, 'widget'),
         libraryTarget: 'amd',
         publicPath: '/'
