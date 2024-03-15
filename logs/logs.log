@@ -1,0 +1,39 @@
+2024-03-15T17:06:10.184 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\index.ts:30 Server has been started on port 2000
+
+2024-03-15T17:06:10.246 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\index.ts:28 Database connection has been successful
+
+2024-03-15T17:07:32.786 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\index.ts:30 Server has been started on port 2000
+
+2024-03-15T17:07:32.828 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\index.ts:28 Database connection has been successful
+
+2024-03-15T17:08:33.045 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\index.ts:30 Server has been started on port 2000
+
+2024-03-15T17:08:33.087 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\index.ts:28 Database connection has been successful
+
+2024-03-15T17:14:30.130 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\index.ts:30 Server has been started on port 2000
+
+2024-03-15T17:14:30.179 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\index.ts:28 Database connection has been successful
+
+2024-03-15T17:22:23.801 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\index.ts:30 Server has been started on port 2000
+
+2024-03-15T17:22:23.854 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\index.ts:28 Database connection has been successful
+
+2024-03-15T17:23:19.564 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\index.ts:30 Server has been started on port 2000
+
+2024-03-15T17:23:19.610 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\index.ts:28 Database connection has been successful
+
+2024-03-15T17:24:03.889 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\index.ts:30 Server has been started on port 2000
+
+2024-03-15T17:24:03.936 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\index.ts:28 Database connection has been successful
+
+2024-03-15T17:24:15.411 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\accountService.ts:128 [
+  {
+    phone: '89188543977',
+    prefix: '91885',
+    operator: 'МТС',
+    region: 'Ростовская область',
+    time_zone: 'Europe/Moscow',
+    time_zone_GMT: 'GMT+3'
+  }
+]
+

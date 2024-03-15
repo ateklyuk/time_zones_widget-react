@@ -1,6 +1,6 @@
 import {Controller, Get} from '@nestjs/common';
 import {LoggerService} from "../core/logger/logger.service";
-import {PORT} from "../core/config";
+import {PORT} from "../core/consts/consts";
 import {Endpoints} from "../core/consts/endpoints";
 
 @Controller()

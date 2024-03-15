@@ -1,0 +1,1310 @@
+2024-03-15T17:06:23.046 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:71 Виджет был удалён из аккаунта
+
+2024-03-15T17:06:23.258 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:69 Данные о пользователе были обновлены в базе данных виджета
+
+2024-03-15T17:06:35.981 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:20 Got request for widget installation
+
+2024-03-15T17:06:36.717 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\apiService.ts:57 Свежий токен получен
+
+2024-03-15T17:06:36.720 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:53 Ошибка авторизации при установке виджета  ateklyuktech TypeError: Cannot read properties of undefined (reading 'jwtDecode')
+    at AuthorizationService.loginHandler (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:24:44)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async login (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authController.ts:9:13)
+
+2024-03-15T17:07:43.359 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:20 Got request for widget installation
+
+2024-03-15T17:07:44.195 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\apiService.ts:57 Свежий токен получен
+
+2024-03-15T17:07:44.213 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:54 Ошибка авторизации при установке виджета  ateklyuktech TypeError: Cannot read properties of undefined (reading 'jwtDecode')
+    at AuthorizationService.loginHandler (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:25:44)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async login (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authController.ts:9:13)
+
+2024-03-15T17:08:43.201 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:20 Got request for widget installation
+
+2024-03-15T17:08:44.102 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\apiService.ts:57 Свежий токен получен
+
+2024-03-15T17:08:44.115 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:27 Авторизация при установке виджета для ateklyuktech прошла успешно
+
+2024-03-15T17:08:44.119 ERROR C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\apiService.ts:74 Ошибка при чтении файла ./authclients/ateklyuktech_amo_token.json Error: ENOENT: no such file or directory, open 'C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\authclients\ateklyuktech_amo_token.json'
+    at Object.open (node:internal/fs/sync:78:18)
+    at Object.openSync (node:fs:565:17)
+    at Object.readFileSync (node:fs:445:35)
+    at ApiService.getAccessToken (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\apiService.ts:68:32)
+    at ApiService.getAccountData (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\apiService.ts:29:29)
+    at AuthorizationService.loginHandler (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:28:39)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async login (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authController.ts:9:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Разработчик\\WebstormProjects\\time_zones_widget-react\\authclients\\ateklyuktech_amo_token.json'
+}
+
+2024-03-15T17:08:44.128 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\apiService.ts:75 Попытка заново получить токен
+
+2024-03-15T17:08:44.419 ERROR C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\apiService.ts:61 {
+  status: 400,
+  statusText: 'Bad Request',
+  headers: {
+    date: 'Fri, 15 Mar 2024 14:08:51 GMT',
+    'content-type': 'application/problem+json',
+    'transfer-encoding': 'chunked',
+    connection: 'keep-alive',
+    server: '-',
+    'x-runtime-generated': '0.2535',
+    'x-runtime-ended-at': '1710511731058',
+    'x-runtime-started-at': '1710511730805',
+    'runtime-timestamp': '1710511731',
+    'served-by': '636f72652d6261636b2d736861726432372d7372763031622e70726f642e636f72652e616d6f7372762e7275',
+    'powered-by': 'amoCore',
+    'cdn-cache-control': 'no-store, no-cache'
+  },
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.0',
+      'Content-Length': 1249
+    },
+    method: 'post',
+    url: 'https://ateklyuktech.amocrm.ru/oauth2/access_token',
+    data: '{"client_id":"641929bf-5d31-4892-96aa-b86a84062963","client_secret":"QTCE4ZQQfsE35gN0mtR7G3GKWx3B8sK243YnbooP0Rw4Ua7r0ooGbAmGfPqNShRR","grant_type":"authorization_code","code":"def50200d3e6ae73e0056343e057886cb9ec0568fb9dccd163268766529b624b713315d1a7adf53450c3b1beeb7e2319a03d3903911931275f01ea0e9fc4025e0b03138d10b81a65a69507546fa1b98b921c7a50de2894f2ed1eb58ce0b531b94be55223650930f26d064e1225d792aaa88cb9384cf90b46685a5da81c03236c7888fd2e731fb89ab8fbe4361b30db76e9925cd729cab1f126ee38a53fb3604fd50fe62bda726a205e06b0450658084f4ebb164a2421a5361a80679c31828b0732472fa8b4c3371b41452474711e9c0d42fa6534b7849e9dbae0acb726475519e5cdf58eb8dda201aad5ab12b2cac7d0a4725bd5a06531786d926a468c76d5f8d73fa6cb9b679263c18770bf8284c80b8d9906da6da74ba46d018261b14ffb855724f730cc9f44266e87758b551c7eb17c421ccfe609ac8d7f9c90d6d412fb38c7e2bd13750862d904c84093ed1f2dad81bf22593029de046407226972c53caf634baed4505a6855ade4a0dff971e1ea33274ace2eed07ebc59b7331bc55addede3b36abeb65fdbf1a208642170b27725c9148c2effa54771efca93d682f494db806e9c63b7476931564febe448b5636d53e3c2b1a34eed2ecb79277cdcb014f61c778790ba3ac4a4112a2a5dafe3b932c225aafd3c609d665efe6beebed29259a2e52cac7ffb44972458e286c3bcafbd28372757d9d2789b2f0","redirect_uri":"https://3ee3ntzyt9km.share.zrok.io/login"}'
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: 1249,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'ateklyuktech.amocrm.ru',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 9,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'ateklyuktech.amocrm.ru',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      autoSelectFamilyAttemptedAddresses: [Array],
+      [Symbol(alpncallback)]: null,
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 17791,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 214,
+        [Symbol(triggerId)]: 212
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'POST /oauth2/access_token HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: application/json\r\n' +
+      'User-Agent: axios/0.26.0\r\n' +
+      'Content-Length: 1249\r\n' +
+      'Host: ateklyuktech.amocrm.ru\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/oauth2/access_token',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'https://ateklyuktech.amocrm.ru/oauth2/access_token',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 24,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: true,
+    host: 'ateklyuktech.amocrm.ru',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 1249,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://ateklyuktech.amocrm.ru/oauth2/access_token',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'content-type': [Array],
+      'user-agent': [Array],
+      'content-length': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  data: {
+    hint: 'Authorization code has been revoked',
+    title: 'Некорректный запрос',
+    type: 'https://developers.amocrm.ru/v3/errors/OAuthProblemJson',
+    status: 400,
+    detail: 'В запросе отсутствует ряд параметров или параметры невалидны'
+  }
+}
+
+2024-03-15T17:08:44.446 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:54 Ошибка авторизации при установке виджета  ateklyuktech Error: Request failed with status code 400
+    at createError (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\node_modules\axios\lib\adapters\http.js:322:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at IncomingMessage.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.0',
+      'Content-Length': 1249
+    },
+    method: 'post',
+    url: 'https://ateklyuktech.amocrm.ru/oauth2/access_token',
+    data: '{"client_id":"641929bf-5d31-4892-96aa-b86a84062963","client_secret":"QTCE4ZQQfsE35gN0mtR7G3GKWx3B8sK243YnbooP0Rw4Ua7r0ooGbAmGfPqNShRR","grant_type":"authorization_code","code":"def50200d3e6ae73e0056343e057886cb9ec0568fb9dccd163268766529b624b713315d1a7adf53450c3b1beeb7e2319a03d3903911931275f01ea0e9fc4025e0b03138d10b81a65a69507546fa1b98b921c7a50de2894f2ed1eb58ce0b531b94be55223650930f26d064e1225d792aaa88cb9384cf90b46685a5da81c03236c7888fd2e731fb89ab8fbe4361b30db76e9925cd729cab1f126ee38a53fb3604fd50fe62bda726a205e06b0450658084f4ebb164a2421a5361a80679c31828b0732472fa8b4c3371b41452474711e9c0d42fa6534b7849e9dbae0acb726475519e5cdf58eb8dda201aad5ab12b2cac7d0a4725bd5a06531786d926a468c76d5f8d73fa6cb9b679263c18770bf8284c80b8d9906da6da74ba46d018261b14ffb855724f730cc9f44266e87758b551c7eb17c421ccfe609ac8d7f9c90d6d412fb38c7e2bd13750862d904c84093ed1f2dad81bf22593029de046407226972c53caf634baed4505a6855ade4a0dff971e1ea33274ace2eed07ebc59b7331bc55addede3b36abeb65fdbf1a208642170b27725c9148c2effa54771efca93d682f494db806e9c63b7476931564febe448b5636d53e3c2b1a34eed2ecb79277cdcb014f61c778790ba3ac4a4112a2a5dafe3b932c225aafd3c609d665efe6beebed29259a2e52cac7ffb44972458e286c3bcafbd28372757d9d2789b2f0","redirect_uri":"https://3ee3ntzyt9km.share.zrok.io/login"}'
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: 1249,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'ateklyuktech.amocrm.ru',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 9,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'ateklyuktech.amocrm.ru',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      autoSelectFamilyAttemptedAddresses: [Array],
+      [Symbol(alpncallback)]: null,
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 17791,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 214,
+        [Symbol(triggerId)]: 212
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'POST /oauth2/access_token HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: application/json\r\n' +
+      'User-Agent: axios/0.26.0\r\n' +
+      'Content-Length: 1249\r\n' +
+      'Host: ateklyuktech.amocrm.ru\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/oauth2/access_token',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'https://ateklyuktech.amocrm.ru/oauth2/access_token',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 24,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: true,
+    host: 'ateklyuktech.amocrm.ru',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 1249,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://ateklyuktech.amocrm.ru/oauth2/access_token',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'content-type': [Array],
+      'user-agent': [Array],
+      'content-length': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 400,
+    statusText: 'Bad Request',
+    headers: {
+      date: 'Fri, 15 Mar 2024 14:08:51 GMT',
+      'content-type': 'application/problem+json',
+      'transfer-encoding': 'chunked',
+      connection: 'keep-alive',
+      server: '-',
+      'x-runtime-generated': '0.2535',
+      'x-runtime-ended-at': '1710511731058',
+      'x-runtime-started-at': '1710511730805',
+      'runtime-timestamp': '1710511731',
+      'served-by': '636f72652d6261636b2d736861726432372d7372763031622e70726f642e636f72652e616d6f7372762e7275',
+      'powered-by': 'amoCore',
+      'cdn-cache-control': 'no-store, no-cache'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Function: httpAdapter],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus],
+      headers: [Object],
+      method: 'post',
+      url: 'https://ateklyuktech.amocrm.ru/oauth2/access_token',
+      data: '{"client_id":"641929bf-5d31-4892-96aa-b86a84062963","client_secret":"QTCE4ZQQfsE35gN0mtR7G3GKWx3B8sK243YnbooP0Rw4Ua7r0ooGbAmGfPqNShRR","grant_type":"authorization_code","code":"def50200d3e6ae73e0056343e057886cb9ec0568fb9dccd163268766529b624b713315d1a7adf53450c3b1beeb7e2319a03d3903911931275f01ea0e9fc4025e0b03138d10b81a65a69507546fa1b98b921c7a50de2894f2ed1eb58ce0b531b94be55223650930f26d064e1225d792aaa88cb9384cf90b46685a5da81c03236c7888fd2e731fb89ab8fbe4361b30db76e9925cd729cab1f126ee38a53fb3604fd50fe62bda726a205e06b0450658084f4ebb164a2421a5361a80679c31828b0732472fa8b4c3371b41452474711e9c0d42fa6534b7849e9dbae0acb726475519e5cdf58eb8dda201aad5ab12b2cac7d0a4725bd5a06531786d926a468c76d5f8d73fa6cb9b679263c18770bf8284c80b8d9906da6da74ba46d018261b14ffb855724f730cc9f44266e87758b551c7eb17c421ccfe609ac8d7f9c90d6d412fb38c7e2bd13750862d904c84093ed1f2dad81bf22593029de046407226972c53caf634baed4505a6855ade4a0dff971e1ea33274ace2eed07ebc59b7331bc55addede3b36abeb65fdbf1a208642170b27725c9148c2effa54771efca93d682f494db806e9c63b7476931564febe448b5636d53e3c2b1a34eed2ecb79277cdcb014f61c778790ba3ac4a4112a2a5dafe3b932c225aafd3c609d665efe6beebed29259a2e52cac7ffb44972458e286c3bcafbd28372757d9d2789b2f0","redirect_uri":"https://3ee3ntzyt9km.share.zrok.io/login"}'
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 1249,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      socket: [TLSSocket],
+      _header: 'POST /oauth2/access_token HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.26.0\r\n' +
+        'Content-Length: 1249\r\n' +
+        'Host: ateklyuktech.amocrm.ru\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/oauth2/access_token',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: true,
+      host: 'ateklyuktech.amocrm.ru',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: {
+      hint: 'Authorization code has been revoked',
+      title: 'Некорректный запрос',
+      type: 'https://developers.amocrm.ru/v3/errors/OAuthProblemJson',
+      status: 400,
+      detail: 'В запросе отсутствует ряд параметров или параметры невалидны'
+    }
+  },
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+
+2024-03-15T17:15:29.556 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:21 Got request for widget installation
+
+2024-03-15T17:15:30.374 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\apiService.ts:57 Свежий токен получен
+
+2024-03-15T17:15:30.386 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:28 Авторизация при установке виджета для ateklyuktech прошла успешно
+
+2024-03-15T17:15:30.391 ERROR C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\apiService.ts:74 Ошибка при чтении файла ./authclients/ateklyuktech_amo_token.json Error: ENOENT: no such file or directory, open 'C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\authclients\ateklyuktech_amo_token.json'
+    at Object.open (node:internal/fs/sync:78:18)
+    at Object.openSync (node:fs:565:17)
+    at Object.readFileSync (node:fs:445:35)
+    at ApiService.getAccessToken (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\apiService.ts:68:32)
+    at ApiService.getAccountData (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\apiService.ts:29:29)
+    at AuthorizationService.loginHandler (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:29:39)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async login (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authController.ts:9:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Разработчик\\WebstormProjects\\time_zones_widget-react\\authclients\\ateklyuktech_amo_token.json'
+}
+
+2024-03-15T17:15:30.399 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\apiService.ts:75 Попытка заново получить токен
+
+2024-03-15T17:15:30.718 ERROR C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\apiService.ts:61 {
+  status: 400,
+  statusText: 'Bad Request',
+  headers: {
+    date: 'Fri, 15 Mar 2024 14:15:37 GMT',
+    'content-type': 'application/problem+json',
+    'transfer-encoding': 'chunked',
+    connection: 'keep-alive',
+    server: '-',
+    'x-runtime-generated': '0.2769',
+    'x-runtime-ended-at': '1710512137364',
+    'x-runtime-started-at': '1710512137087',
+    'runtime-timestamp': '1710512137',
+    'served-by': '636f72652d6261636b3138622e70726f642e636f72652e616d6f7372762e7275',
+    'powered-by': 'amoCore',
+    'cdn-cache-control': 'no-store, no-cache'
+  },
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.0',
+      'Content-Length': 1249
+    },
+    method: 'post',
+    url: 'https://ateklyuktech.amocrm.ru/oauth2/access_token',
+    data: '{"client_id":"641929bf-5d31-4892-96aa-b86a84062963","client_secret":"QTCE4ZQQfsE35gN0mtR7G3GKWx3B8sK243YnbooP0Rw4Ua7r0ooGbAmGfPqNShRR","grant_type":"authorization_code","code":"def5020037a4f2fcb2bc9fe91aaed7b0ca3a20a8ce191f9caba4cabbccd62f82302a16a86f0bb46df2229114840e5178020bf85a32ef70a30217dbfe9633cb02d08e44e90d0bf4e6bc1f6837b02dea29a1696d46fef608d79541017bc4376784393303196262508a23b9d1e56046e78ba453a2fd91c09013373b76be55c2aef127fe375cdd6f3593386f51a66930169aabc7cfa68e8f2b9e0912f05a9dc969b16053da37212b742c5407c91277847f48509287e0dd79a299d8a8b3b56ff3a9ba66500b880253323da9b8d2443cd51aa54b9c9c91661b4fcc631658f16f57e6de61bff2c3290f94381370e243e1913c9d4de46adeb64eba74c93cd3fee6b21dd4e1dd3a8c422b97aee3316d8f453958dadc54159a99be411045d5c95298d274057f8f39e03ea7c0bd92383acde3b949a01e413ef3432a157d23d4d432f96782e93b7b84af6f1c300c35ff363c736b9028c0416942fa7b80f75bf11194568bbe11f7d53b7dbd4400e8063cae09ed9fe85ce9920d3df9ffef18c6d7519505521cf22102644549e21fce96ce480e0a8b6823c61be6717dcc3cd45dbdfdbe77d623227f5b26539161bf3fc948d046c6bebc16eb583ac8fbc0e910e4b9cefc57033f30510f37151f24e635c4766c520dc3449edf2fcfd68a55fd88afd356c8459664cfa1e13339f4320d8866b5d722cc231f0e447a13ccfc8b5d5a29ee","redirect_uri":"https://3ee3ntzyt9km.share.zrok.io/login"}'
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: 1249,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'ateklyuktech.amocrm.ru',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 9,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'ateklyuktech.amocrm.ru',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      autoSelectFamilyAttemptedAddresses: [Array],
+      [Symbol(alpncallback)]: null,
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 67653,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 286,
+        [Symbol(triggerId)]: 284
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'POST /oauth2/access_token HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: application/json\r\n' +
+      'User-Agent: axios/0.26.0\r\n' +
+      'Content-Length: 1249\r\n' +
+      'Host: ateklyuktech.amocrm.ru\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/oauth2/access_token',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'https://ateklyuktech.amocrm.ru/oauth2/access_token',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 24,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: true,
+    host: 'ateklyuktech.amocrm.ru',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 1249,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://ateklyuktech.amocrm.ru/oauth2/access_token',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'content-type': [Array],
+      'user-agent': [Array],
+      'content-length': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  data: {
+    hint: 'Authorization code has been revoked',
+    title: 'Некорректный запрос',
+    type: 'https://developers.amocrm.ru/v3/errors/OAuthProblemJson',
+    status: 400,
+    detail: 'В запросе отсутствует ряд параметров или параметры невалидны'
+  }
+}
+
+2024-03-15T17:15:30.748 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:55 Ошибка авторизации при установке виджета  ateklyuktech Error: Request failed with status code 400
+    at createError (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\node_modules\axios\lib\adapters\http.js:322:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at IncomingMessage.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.0',
+      'Content-Length': 1249
+    },
+    method: 'post',
+    url: 'https://ateklyuktech.amocrm.ru/oauth2/access_token',
+    data: '{"client_id":"641929bf-5d31-4892-96aa-b86a84062963","client_secret":"QTCE4ZQQfsE35gN0mtR7G3GKWx3B8sK243YnbooP0Rw4Ua7r0ooGbAmGfPqNShRR","grant_type":"authorization_code","code":"def5020037a4f2fcb2bc9fe91aaed7b0ca3a20a8ce191f9caba4cabbccd62f82302a16a86f0bb46df2229114840e5178020bf85a32ef70a30217dbfe9633cb02d08e44e90d0bf4e6bc1f6837b02dea29a1696d46fef608d79541017bc4376784393303196262508a23b9d1e56046e78ba453a2fd91c09013373b76be55c2aef127fe375cdd6f3593386f51a66930169aabc7cfa68e8f2b9e0912f05a9dc969b16053da37212b742c5407c91277847f48509287e0dd79a299d8a8b3b56ff3a9ba66500b880253323da9b8d2443cd51aa54b9c9c91661b4fcc631658f16f57e6de61bff2c3290f94381370e243e1913c9d4de46adeb64eba74c93cd3fee6b21dd4e1dd3a8c422b97aee3316d8f453958dadc54159a99be411045d5c95298d274057f8f39e03ea7c0bd92383acde3b949a01e413ef3432a157d23d4d432f96782e93b7b84af6f1c300c35ff363c736b9028c0416942fa7b80f75bf11194568bbe11f7d53b7dbd4400e8063cae09ed9fe85ce9920d3df9ffef18c6d7519505521cf22102644549e21fce96ce480e0a8b6823c61be6717dcc3cd45dbdfdbe77d623227f5b26539161bf3fc948d046c6bebc16eb583ac8fbc0e910e4b9cefc57033f30510f37151f24e635c4766c520dc3449edf2fcfd68a55fd88afd356c8459664cfa1e13339f4320d8866b5d722cc231f0e447a13ccfc8b5d5a29ee","redirect_uri":"https://3ee3ntzyt9km.share.zrok.io/login"}'
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: 1249,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'ateklyuktech.amocrm.ru',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 9,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'ateklyuktech.amocrm.ru',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      autoSelectFamilyAttemptedAddresses: [Array],
+      [Symbol(alpncallback)]: null,
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 67653,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 286,
+        [Symbol(triggerId)]: 284
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'POST /oauth2/access_token HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: application/json\r\n' +
+      'User-Agent: axios/0.26.0\r\n' +
+      'Content-Length: 1249\r\n' +
+      'Host: ateklyuktech.amocrm.ru\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/oauth2/access_token',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'https://ateklyuktech.amocrm.ru/oauth2/access_token',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 24,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: true,
+    host: 'ateklyuktech.amocrm.ru',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 1249,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://ateklyuktech.amocrm.ru/oauth2/access_token',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'content-type': [Array],
+      'user-agent': [Array],
+      'content-length': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 400,
+    statusText: 'Bad Request',
+    headers: {
+      date: 'Fri, 15 Mar 2024 14:15:37 GMT',
+      'content-type': 'application/problem+json',
+      'transfer-encoding': 'chunked',
+      connection: 'keep-alive',
+      server: '-',
+      'x-runtime-generated': '0.2769',
+      'x-runtime-ended-at': '1710512137364',
+      'x-runtime-started-at': '1710512137087',
+      'runtime-timestamp': '1710512137',
+      'served-by': '636f72652d6261636b3138622e70726f642e636f72652e616d6f7372762e7275',
+      'powered-by': 'amoCore',
+      'cdn-cache-control': 'no-store, no-cache'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Function: httpAdapter],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus],
+      headers: [Object],
+      method: 'post',
+      url: 'https://ateklyuktech.amocrm.ru/oauth2/access_token',
+      data: '{"client_id":"641929bf-5d31-4892-96aa-b86a84062963","client_secret":"QTCE4ZQQfsE35gN0mtR7G3GKWx3B8sK243YnbooP0Rw4Ua7r0ooGbAmGfPqNShRR","grant_type":"authorization_code","code":"def5020037a4f2fcb2bc9fe91aaed7b0ca3a20a8ce191f9caba4cabbccd62f82302a16a86f0bb46df2229114840e5178020bf85a32ef70a30217dbfe9633cb02d08e44e90d0bf4e6bc1f6837b02dea29a1696d46fef608d79541017bc4376784393303196262508a23b9d1e56046e78ba453a2fd91c09013373b76be55c2aef127fe375cdd6f3593386f51a66930169aabc7cfa68e8f2b9e0912f05a9dc969b16053da37212b742c5407c91277847f48509287e0dd79a299d8a8b3b56ff3a9ba66500b880253323da9b8d2443cd51aa54b9c9c91661b4fcc631658f16f57e6de61bff2c3290f94381370e243e1913c9d4de46adeb64eba74c93cd3fee6b21dd4e1dd3a8c422b97aee3316d8f453958dadc54159a99be411045d5c95298d274057f8f39e03ea7c0bd92383acde3b949a01e413ef3432a157d23d4d432f96782e93b7b84af6f1c300c35ff363c736b9028c0416942fa7b80f75bf11194568bbe11f7d53b7dbd4400e8063cae09ed9fe85ce9920d3df9ffef18c6d7519505521cf22102644549e21fce96ce480e0a8b6823c61be6717dcc3cd45dbdfdbe77d623227f5b26539161bf3fc948d046c6bebc16eb583ac8fbc0e910e4b9cefc57033f30510f37151f24e635c4766c520dc3449edf2fcfd68a55fd88afd356c8459664cfa1e13339f4320d8866b5d722cc231f0e447a13ccfc8b5d5a29ee","redirect_uri":"https://3ee3ntzyt9km.share.zrok.io/login"}'
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 1249,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      socket: [TLSSocket],
+      _header: 'POST /oauth2/access_token HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.26.0\r\n' +
+        'Content-Length: 1249\r\n' +
+        'Host: ateklyuktech.amocrm.ru\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/oauth2/access_token',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: true,
+      host: 'ateklyuktech.amocrm.ru',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: {
+      hint: 'Authorization code has been revoked',
+      title: 'Некорректный запрос',
+      type: 'https://developers.amocrm.ru/v3/errors/OAuthProblemJson',
+      status: 400,
+      detail: 'В запросе отсутствует ряд параметров или параметры невалидны'
+    }
+  },
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+
+2024-03-15T17:23:33.351 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:21 Got request for widget installation
+
+2024-03-15T17:23:34.374 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\apiService.ts:57 Свежий токен получен
+
+2024-03-15T17:23:34.385 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:28 Авторизация при установке виджета для ateklyuktech прошла успешно
+
+2024-03-15T17:23:34.438 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:43 Данные о пользователе были добавлены в базу данных виджета
+
+2024-03-15T17:24:50.334 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:70 Виджет был удалён из аккаунта
+
+2024-03-15T17:24:50.498 DEBUG C:\Users\Разработчик\WebstormProjects\time_zones_widget-react\src\api\authService.ts:68 Данные о пользователе были обновлены в базе данных виджета
+

@@ -5,6 +5,3 @@ export const Config = {
     refresh_grand_type: `refresh_token`,
     redirect_uri: 'https://widev2.reon.pro/widgets/tasks_new/api/auth',
 };
-export const PORT = 2000;
-export const DB_URI = 'mongodb://localhost:27017';
-export const DB_NAME = 'prefixes';
