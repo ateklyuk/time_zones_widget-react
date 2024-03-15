@@ -14,10 +14,12 @@
     "start:prod": "node dist/main"
   },
   "dependencies": {
+    "@nestjs/axios": "^3.0.2",
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/mongoose": "^10.0.4",
     "@nestjs/platform-express": "^10.0.0",
+    "axios": "^1.6.7",
     "mongoose": "^8.2.1",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1"

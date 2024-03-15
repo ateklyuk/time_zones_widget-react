@@ -1,12 +1,16 @@
-import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
+import {Controller, Get} from '@nestjs/common';
+import {LoggerService} from "../core/logger/logger.service";
+import {PORT} from "../core/config";
+import {Endpoints} from "../core/consts/endpoints";
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
-
-  @Get()
-  getHello(): string {
-    return this.appService.getHello();
-  }
+    constructor(private readonly loggerService: LoggerService) {}
+    @Get(Endpoints.Runtime.Ping)
+    public ping(): string {
+        this.loggerService.debug(
+            `server is working on port: ${PORT}`,
+        );
+        return `SERVER IS WORKING ON PORT: ${PORT} `;
+    }
 }

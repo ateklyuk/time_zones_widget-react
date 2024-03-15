@@ -1,4 +1,6 @@
 import { Injectable } from '@nestjs/common';
+import axios from "axios";
 
 @Injectable()
-export class AmoRepository {}
+export class AmoApiRepository {
+}

@@ -2,3 +2,4 @@ node_modules/
 site-button/
 *.zip
 .idea
+/backend/src/core/logger/logs

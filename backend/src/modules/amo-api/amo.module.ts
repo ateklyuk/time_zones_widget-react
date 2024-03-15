@@ -1,8 +1,9 @@
 import { Module } from '@nestjs/common';
-import {AmoService} from "./amo.service";
-import {AmoRepository} from "./amo.repository";
+import { AmoApiService } from "./amo.service";
+import { AmoApiRepository } from "./amo.repository";
 
 @Module({
-    providers: [AmoService, AmoRepository]
+    providers: [AmoApiService, AmoApiRepository],
+    exports: [AmoApiService]
 })
-export class AccountModule {}
+export class AmoApiModule {}

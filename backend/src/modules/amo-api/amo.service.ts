@@ -1,4 +1,5 @@
-import { Controller } from '@nestjs/common';
+import {Injectable} from '@nestjs/common';
 
-@Controller('amo')
-export class AmoService {}
+@Injectable()
+export class AmoApiService {
+}

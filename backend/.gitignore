@@ -6,7 +6,7 @@ prefixes/
 /site-button
 *.zip
 # Logs
-/logs
+/src/core/logger/logs
 
 
 npm-debug.log*
