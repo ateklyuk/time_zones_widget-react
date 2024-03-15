@@ -1,4 +1,4 @@
 import { Controller } from '@nestjs/common';
 
-@Controller('timezones')
+@Controller()
 export class TimezonesController {}
