@@ -1,12 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage ('Repo Checkout') {
-            script {
-            checkout scmGit(
+        stage('Repo Checkout') {
+            steps {
+                script {
+                    checkout scmGit(
                         branches: [[name: '*/B_ApiRepository_2_create']],
                         extensions: [],
                         userRemoteConfigs: [[credentialsId: 'gitHubKey', url: 'git@github.com:ateklyuk/time_zones_widget-react.git']])
+                }
             }
         }
         stage('Build') {
