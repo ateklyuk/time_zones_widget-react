@@ -13,6 +13,7 @@ pipeline {
                         extensions: [],
                         userRemoteConfigs: [[credentialsId: 'gitHubKey', url: 'git@github.com:ateklyuk/time_zones_widget-react.git']])
                     echo 'CHECKOUT SUCCESS'
+                    sh 'ls -la'
                 }
             }
         }
