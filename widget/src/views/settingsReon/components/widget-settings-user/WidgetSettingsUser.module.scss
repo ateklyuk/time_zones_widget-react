@@ -1,0 +1,21 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0;
+    &__row {
+        display: flex;
+        gap: 15px;
+    }
+    &__label-input {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        &-note {
+            color: #777;
+            text-indent: 5px;
+            font-size: 11px;
+        }
+    }
+}

@@ -1,0 +1,141 @@
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.reon-mailer-settings__footer {
+	padding: 15px 0 17px 0;
+	background-color: #2b3538;
+	color: #ececec;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.reon-mailer-settings__footer--relative {
+	position: relative;
+	padding-bottom: 120px;
+}
+
+.reon-mailer-settings__footer-text {
+	text-align: center;
+}
+
+.reon-mailer-settings__footer-contacts {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.reon-mailer-settings__footer-contacts-item a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.reon-mailer-settings__footer-contacts-item a:hover {
+	text-decoration: underline;
+}
+
+.reon-mailer-settings__footer-contacts-item img {
+	max-width: 95px;
+	margin: 6px 0 0 0;
+}
+
+
+.reon-timezone-widget-same-timezone-work-on {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    min-width: 150px;
+    max-width: 400px;
+    width: auto;
+    height: auto;
+    border: 2px solid #9900ff;
+    background-color: rgba(153, 153, 255, 0.4);
+    border-radius: 8px;
+    color: #4509cf;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.reon-timezone-widget-another-timezone-work-on {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    min-width: 150px;
+    max-width: 400px;
+    width: auto;
+    height: auto;
+    border: 2px solid #9900ff;
+    background-color: rgba(153, 153, 255, 0.4);
+    border-radius: 8px;
+    color: #d40311;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.reon-timezone-widget-same-timezone-work-off {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    min-width: 150px;
+    max-width: 400px;
+    width: auto;
+    height: auto;
+    border: 2px solid #ff0099;
+    background-color: rgba(255, 102, 204, 0.4);
+    border-radius: 8px;
+    color: #4509cf;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.reon-timezone-widget-another-timezone-work-off {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    min-width: 150px;
+    max-width: 400px;
+    width: auto;
+    height: auto;
+    border: 2px solid #ff0099;
+    background-color: rgba(255, 102, 204, 0.4);
+    border-radius: 8px;
+    color: #d40311;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.reon-widget-timezone__settings-warning {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.reon-widget-timezone__settings-warning-important {
+    color: red;
+    font-weight: bold;
+}
+.reon_widget_timezone_modal-text-paid {
+    color: #a0bf44;
+}
+.reon_widget_timezone_modal-text-notpaid {
+    color: #f37575;
+}
