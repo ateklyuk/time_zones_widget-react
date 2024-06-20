@@ -12,16 +12,14 @@ pipeline {
                         branches: [[name: '*/'+'${branch}']],
                         extensions: [],
                         userRemoteConfigs: [[credentialsId: 'gitHubKey', url: 'git@github.com:ateklyuk/time_zones_widget-react.git']])
-                }
-            }
-            steps {
-                script {
-
+                    echo 'CHECKOUT SUCCESS'
                 }
             }
         }
         stage('Build') {
-
+            steps {
+                echo 'Building..'
+            }
         }
         stage('Test') {
             steps {
