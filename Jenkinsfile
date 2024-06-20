@@ -9,7 +9,7 @@ pipeline {
                     def branch = readFile('branch').trim()
                     echo("Branch is '${branch}'")
                     checkout scmGit(
-                        branches: [[name: '*/'+'${branch}']],
+                        branches: [[name: "*/'${branch}'"]],
                         extensions: [],
                         userRemoteConfigs: [[credentialsId: 'gitHubKey', url: 'git@github.com:ateklyuk/time_zones_widget-react.git']])
                     echo 'CHECKOUT SUCCESS'
