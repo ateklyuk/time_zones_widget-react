@@ -4,16 +4,6 @@ pipeline {
         stage('Repo Checkout') {
             steps {
                 script {
-                    checkout scmGit(
-                        branches: [[name: '*/B_ApiRepository_2_create']],
-                        extensions: [],
-                        userRemoteConfigs: [[credentialsId: 'gitHubKey', url: 'git@github.com:ateklyuk/time_zones_widget-react.git']])
-                }
-            }
-        }
-        stage('Build') {
-            steps {
-                script {
                     sh 'echo "This is my first step"'
                     def cmd = 'git name-rev --name-only HEAD > branch'
                     isUnix()?sh(cmd):bat(cmd)
@@ -21,6 +11,17 @@ pipeline {
                     echo("Branch is '${branch}'")
                 }
             }
+            steps {
+                script {
+                    checkout scmGit(
+                        branches: [[name: '*/'+'${branch}']],
+                        extensions: [],
+                        userRemoteConfigs: [[credentialsId: 'gitHubKey', url: 'git@github.com:ateklyuk/time_zones_widget-react.git']])
+                }
+            }
+        }
+        stage('Build') {
+
         }
         stage('Test') {
             steps {
