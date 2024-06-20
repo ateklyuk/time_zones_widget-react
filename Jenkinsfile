@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Repo Checkout') {
             steps {
-                
+                echo 'Building..'
             }
         }
         stage('Build') {
