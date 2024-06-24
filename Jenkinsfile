@@ -11,7 +11,7 @@ pipeline {
                 echo 'Building..'
                 sh 'ls -la'
             }
-            
+
         }
         stage('Test') {
             steps {
