@@ -7,7 +7,7 @@ prefixes/
 *.zip
 # Logs
 /src/core/logger/logs
-
+/widget/node_modules
 
 npm-debug.log*
 
