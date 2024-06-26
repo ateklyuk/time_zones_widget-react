@@ -1,5 +1,16 @@
-node_modules/
+# compiled output
+/dist
+/node_modules
+/build
 prefixes/
-site-button/
-logs/
+/site-button
 *.zip
+# Logs
+/src/core/logger/logs
+/widget/node_modules
+
+npm-debug.log*
+
+# IDEs and editors
+.idea
+
